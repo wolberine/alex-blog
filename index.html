@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+        
+<section class="content">
+
+  <h1>
+  Blog
+  </h1>
+   <div class='wrapper'>
+   <div class='content'>
+   <div class='body'>
+  <!--<ul class="entries">-->
+    {% for post in site.posts %}
+
+      <h2>{{ post.title }}</h2>
+      <a href="{{ post.url }}">
+        <img class="displayed_tight" src="{{ post.image }}" />
+      </a>
+ 
+   <br />
+
+    {% endfor %}
+
+  <!--</ul>-->
+  </div>
+  </div>
+  </div>

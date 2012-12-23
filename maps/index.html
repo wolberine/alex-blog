@@ -1,0 +1,23 @@
+---
+layout: default
+title: Maps
+---
+<section class="content">
+  <h1>Maps. My work.</h1>
+  
+  <!--<p>Check out my images below!</p>-->
+</section>
+<ul class="entries">
+  {% for post in site.categories.maps %}
+  
+    <h2>{{ post.title }}</h2>
+    <a href="{{ post.url }}">
+      <img class="displayed_tight" src="{{ post.image }}" />
+   
+      <!--<p>{{ post.content }}</p>-->
+    </a>
+    </br>
+  
+  {% endfor %}
+</ul>
+</br>
